@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Financial Tools & Resources | AI Cool Finance</title>
+    <meta name="description" content="Download free financial calculators, budget templates, and planning tools. Take control of your finances with our comprehensive resource library.">
+    <meta name="keywords" content="financial tools, budget calculator, free templates, money management tools, financial planning">
+    <meta name="author" content="AI Cool Finance Team">
+    <link rel="canonical" href="https://www.aicoolgames.cool/resources.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Free Financial Tools & Resources | AI Cool Finance">
+    <meta property="og:description" content="Download free financial calculators, budget templates, and planning tools.">
+    <meta property="og:url" content="https://www.aicoolgames.cool/resources.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free Financial Tools & Resources">
+    <meta name="twitter:description" content="Download free financial calculators and planning tools.">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1091058137620121" crossorigin="anonymous"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-239D8TQJ2R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-239D8TQJ2R');
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">AI Cool <span>Finance</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>Resources</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Free Financial Tools & Resources</h1>
+            <p>Download our comprehensive collection of financial calculators, templates, and planning tools. Everything you need to take control of your money—completely free.</p>
+        </div>
+    </section>
+
+    <!-- Top Ad -->
+    <div class="ad-container">
+        <div class="container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1091058137620121" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- Interactive Calculators Section -->
+    <section class="calculators-section">
+        <div class="container">
+            <h2>Interactive Financial Calculators</h2>
+            <p class="section-desc">Use our online calculators to plan your financial future</p>
+            
+            <div class="calculators-grid">
+                <!-- Compound Interest Calculator -->
+                <div class="calculator-card">
+                    <div class="calc-icon">📈</div>
+                    <h3>Compound Interest Calculator</h3>
+                    <p>See how much your investments can grow over time with the power of compound interest.</p>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Initial Investment ($)</label>
+                            <input type="number" id="ci-principal" value="10000" placeholder="10000">
+                        </div>
+                        <div class="form-group">
+                            <label>Monthly Contribution ($)</label>
+                            <input type="number" id="ci-monthly" value="500" placeholder="500">
+                        </div>
+                        <div class="form-group">
+                            <label>Annual Return (%)</label>
+                            <input type="number" id="ci-rate" value="7" placeholder="7">
+                        </div>
+                        <div class="form-group">
+                            <label>Years</label>
+                            <input type="number" id="ci-years" value="20" placeholder="20">
+                        </div>
+                        <button onclick="calculateCompoundInterest()" class="btn">Calculate</button>
+                        <div id="ci-result" class="calc-result"></div>
+                    </div>
+                </div>
+
+                <!-- Debt Payoff Calculator -->
+                <div class="calculator-card">
+                    <div class="calc-icon">💳</div>
+                    <h3>Debt Payoff Calculator</h3>
+                    <p>Calculate how long it will take to pay off your debt and see how extra payments accelerate your progress.</p>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Total Debt ($)</label>
+                            <input type="number" id="dp-debt" value="15000" placeholder="15000">
+                        </div>
+                        <div class="form-group">
+                            <label>Annual Interest Rate (%)</label>
+                            <input type="number" id="dp-rate" value="18" placeholder="18">
+                        </div>
+                        <div class="form-group">
+                            <label>Monthly Payment ($)</label>
+                            <input type="number" id="dp-payment" value="400" placeholder="400">
+                        </div>
+                        <button onclick="calculateDebtPayoff()" class="btn">Calculate</button>
+                        <div id="dp-result" class="calc-result"></div>
+                    </div>
+                </div>
+
+                <!-- Emergency Fund Calculator -->
+                <div class="calculator-card">
+                    <div class="calc-icon">🛡️</div>
+                    <h3>Emergency Fund Calculator</h3>
+                    <p>Determine how much you need in your emergency fund based on your monthly expenses.</p>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Monthly Housing ($)</label>
+                            <input type="number" id="ef-housing" value="1500" placeholder="1500">
+                        </div>
+                        <div class="form-group">
+                            <label>Monthly Food ($)</label>
+                            <input type="number" id="ef-food" value="600" placeholder="600">
+                        </div>
+                        <div class="form-group">
+                            <label>Monthly Utilities ($)</label>
+                            <input type="number" id="ef-utilities" value="300" placeholder="300">
+                        </div>
+                        <div class="form-group">
+                            <label>Other Expenses ($)</label>
+                            <input type="number" id="ef-other" value="800" placeholder="800">
+                        </div>
+                        <div class="form-group">
+                            <label>Months of Coverage</label>
+                            <select id="ef-months">
+                                <option value="3">3 months</option>
+                                <option value="6" selected>6 months</option>
+                                <option value="9">9 months</option>
+                                <option value="12">12 months</option>
+                            </select>
+                        </div>
+                        <button onclick="calculateEmergencyFund()" class="btn">Calculate</button>
+                        <div id="ef-result" class="calc-result"></div>
+                    </div>
+                </div>
+
+                <!-- Retirement Calculator -->
+                <div class="calculator-card">
+                    <div class="calc-icon">🏖️</div>
+                    <h3>Retirement Savings Calculator</h3>
+                    <p>Plan for your retirement by calculating how much you need to save to reach your goals.</p>
+                    <div class="calculator-form">
+                        <div class="form-group">
+                            <label>Current Age</label>
+                            <input type="number" id="ret-age" value="30" placeholder="30">
+                        </div>
+                        <div class="form-group">
+                            <label>Retirement Age</label>
+                            <input type="number" id="ret-retire-age" value="65" placeholder="65">
+                        </div>
+                        <div class="form-group">
+                            <label>Current Savings ($)</label>
+                            <input type="number" id="ret-current" value="50000" placeholder="50000">
+                        </div>
+                        <div class="form-group">
+                            <label>Monthly Contribution ($)</label>
+                            <input type="number" id="ret-monthly" value="1000" placeholder="1000">
+                        </div>
+                        <div class="form-group">
+                            <label>Expected Return (%)</label>
+                            <input type="number" id="ret-return" value="7" placeholder="7">
+                        </div>
+                        <button onclick="calculateRetirement()" class="btn">Calculate</button>
+                        <div id="ret-result" class="calc-result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Middle Ad -->
+    <div class="ad-container">
+        <div class="container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1091058137620121" data-ad-slot="2345678901" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- Downloadable Resources -->
+    <section class="downloads-section">
+        <div class="container">
+            <h2>Free Downloadable Resources</h2>
+            <p class="section-desc">Professional templates and worksheets to accelerate your financial journey</p>
+            
+            <div class="resources-grid">
+                <div class="resource-card featured">
+                    <div class="resource-badge">Most Popular</div>
+                    <span class="resource-icon">📊</span>
+                    <h3>Complete Budget Template</h3>
+                    <p>Comprehensive Excel template with automatic calculations, spending analysis, and visual charts. Track income, expenses, and savings goals all in one place.</p>
+                    <ul class="resource-features">
+                        <li>✓ Automatic calculations</li>
+                        <li>✓ 12-month tracking</li>
+                        <li>✓ Spending category breakdown</li>
+                        <li>✓ Visual charts & graphs</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('budget-template')">Download Free (Excel)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">🎯</span>
+                    <h3>Debt Payoff Tracker</h3>
+                    <p>Track multiple debts and visualize your progress with the debt snowball or avalanche method.</p>
+                    <ul class="resource-features">
+                        <li>✓ Multiple debt tracking</li>
+                        <li>✓ Payoff date calculator</li>
+                        <li>✓ Interest savings comparison</li>
+                        <li>✓ Progress visualization</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('debt-tracker')">Download Free (Excel)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">🏦</span>
+                    <h3>Emergency Fund Planner</h3>
+                    <p>Calculate your ideal emergency fund size and create a step-by-step savings plan.</p>
+                    <ul class="resource-features">
+                        <li>✓ Expense categorization</li>
+                        <li>✓ Savings timeline</li>
+                        <li>✓ Monthly target calculator</li>
+                        <li>✓ Progress tracking</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('emergency-fund')">Download Free (PDF)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">📈</span>
+                    <h3>Investment Tracking Spreadsheet</h3>
+                    <p>Monitor your investment portfolio performance across multiple accounts.</p>
+                    <ul class="resource-features">
+                        <li>✓ Portfolio overview</li>
+                        <li>✓ Asset allocation tracking</li>
+                        <li>✓ Return calculations</li>
+                        <li>✓ Rebalancing alerts</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('investment-tracker')">Download Free (Excel)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">💰</span>
+                    <h3>Net Worth Statement</h3>
+                    <p>Track your assets and liabilities to monitor your overall financial health.</p>
+                    <ul class="resource-features">
+                        <li>✓ Asset & liability tracking</li>
+                        <li>✓ Monthly comparisons</li>
+                        <li>✓ Growth visualization</li>
+                        <li>✓ Year-over-year analysis</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('net-worth')">Download Free (Excel)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">📅</span>
+                    <h3>Financial Goal Planner</h3>
+                    <p>Set and track SMART financial goals with actionable steps and milestones.</p>
+                    <ul class="resource-features">
+                        <li>✓ Goal setting framework</li>
+                        <li>✓ Milestone tracking</li>
+                        <li>✓ Action step planner</li>
+                        <li>✓ Progress monitoring</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('goal-planner')">Download Free (PDF)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">🍽️</span>
+                    <h3>Meal Planning Template</h3>
+                    <p>Plan your meals, reduce food waste, and save money on groceries.</p>
+                    <ul class="resource-features">
+                        <li>✓ Weekly meal planner</li>
+                        <li>✓ Shopping list generator</li>
+                        <li>✓ Budget tracker</li>
+                        <li>✓ Recipe organizer</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('meal-planner')">Download Free (PDF)</a>
+                </div>
+
+                <div class="resource-card">
+                    <span class="resource-icon">📋</span>
+                    <h3>Monthly Financial Checklist</h3>
+                    <p>Stay on top of your finances with this comprehensive monthly review checklist.</p>
+                    <ul class="resource-features">
+                        <li>✓ Budget review tasks</li>
+                        <li>✓ Bill payment tracking</li>
+                        <li>✓ Savings goal check-in</li>
+                        <li>✓ Financial health indicators</li>
+                    </ul>
+                    <a href="#" class="btn btn-download" onclick="downloadResource('monthly-checklist')">Download Free (PDF)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom Ad -->
+    <div class="ad-container">
+        <div class="container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1091058137620121" data-ad-slot="3456789012" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- How to Use Section -->
+    <section class="how-to-use">
+        <div class="container">
+            <h2>How to Use Our Resources</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download</h3>
+                    <p>Choose the resource that fits your needs and download it instantly—no email required.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Customize</h3>
+                    <p>Personalize the templates with your own financial information and goals.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Implement</h3>
+                    <p>Use the tools consistently to track progress and make informed financial decisions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Succeed</h3>
+                    <p>Watch your financial health improve as you stay organized and focused on your goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Take Control of Your Finances?</h2>
+            <p>Explore our comprehensive blog for in-depth guides on budgeting, investing, debt management, and more.</p>
+            <a href="blog.html" class="btn btn-large">Read Our Blog</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>AI Cool Finance</h3>
+                    <p>Your trusted source for personal finance advice. We provide free tools, resources, and guides to help you achieve financial freedom.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="blog.html?category=budgeting">Budgeting</a></li>
+                        <li><a href="blog.html?category=investing">Investing</a></li>
+                        <li><a href="blog.html?category=debt">Debt Management</a></li>
+                        <li><a href="blog.html?category=retirement">Retirement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Cool Finance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calculator Scripts -->
+    <script>
+        function calculateCompoundInterest() {
+            const principal = parseFloat(document.getElementById('ci-principal').value) || 0;
+            const monthly = parseFloat(document.getElementById('ci-monthly').value) || 0;
+            const rate = parseFloat(document.getElementById('ci-rate').value) || 0;
+            const years = parseFloat(document.getElementById('ci-years').value) || 0;
+            
+            const monthlyRate = rate / 100 / 12;
+            const numPayments = years * 12;
+            
+            const futureValue = principal * Math.pow(1 + monthlyRate, numPayments) + 
+                               monthly * (Math.pow(1 + monthlyRate, numPayments) - 1) / monthlyRate;
+            
+            const totalContributions = principal + (monthly * numPayments);
+            const interestEarned = futureValue - totalContributions;
+            
+            document.getElementById('ci-result').innerHTML = `
+                <div class="result-box">
+                    <h4>Results</h4>
+                    <p><strong>Future Value:</strong> $${futureValue.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Total Contributions:</strong> $${totalContributions.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Interest Earned:</strong> $${interestEarned.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                </div>
+            `;
+        }
+
+        function calculateDebtPayoff() {
+            const debt = parseFloat(document.getElementById('dp-debt').value) || 0;
+            const rate = parseFloat(document.getElementById('dp-rate').value) || 0;
+            const payment = parseFloat(document.getElementById('dp-payment').value) || 0;
+            
+            const monthlyRate = rate / 100 / 12;
+            let balance = debt;
+            let months = 0;
+            let totalInterest = 0;
+            
+            while (balance > 0 && months < 600) {
+                const interest = balance * monthlyRate;
+                totalInterest += interest;
+                balance = balance + interest - payment;
+                months++;
+                if (balance < 0) balance = 0;
+            }
+            
+            const years = Math.floor(months / 12);
+            const remainingMonths = months % 12;
+            
+            document.getElementById('dp-result').innerHTML = `
+                <div class="result-box">
+                    <h4>Results</h4>
+                    <p><strong>Payoff Time:</strong> ${years} years ${remainingMonths} months</p>
+                    <p><strong>Total Interest Paid:</strong> $${totalInterest.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Total Amount Paid:</strong> $${(debt + totalInterest).toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                </div>
+            `;
+        }
+
+        function calculateEmergencyFund() {
+            const housing = parseFloat(document.getElementById('ef-housing').value) || 0;
+            const food = parseFloat(document.getElementById('ef-food').value) || 0;
+            const utilities = parseFloat(document.getElementById('ef-utilities').value) || 0;
+            const other = parseFloat(document.getElementById('ef-other').value) || 0;
+            const months = parseInt(document.getElementById('ef-months').value) || 6;
+            
+            const monthlyExpenses = housing + food + utilities + other;
+            const targetAmount = monthlyExpenses * months;
+            
+            document.getElementById('ef-result').innerHTML = `
+                <div class="result-box">
+                    <h4>Results</h4>
+                    <p><strong>Monthly Expenses:</strong> $${monthlyExpenses.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Emergency Fund Target:</strong> $${targetAmount.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Recommended Coverage:</strong> ${months} months</p>
+                </div>
+            `;
+        }
+
+        function calculateRetirement() {
+            const currentAge = parseInt(document.getElementById('ret-age').value) || 30;
+            const retireAge = parseInt(document.getElementById('ret-retire-age').value) || 65;
+            const currentSavings = parseFloat(document.getElementById('ret-current').value) || 0;
+            const monthlyContribution = parseFloat(document.getElementById('ret-monthly').value) || 0;
+            const annualReturn = parseFloat(document.getElementById('ret-return').value) || 7;
+            
+            const years = retireAge - currentAge;
+            const monthlyRate = annualReturn / 100 / 12;
+            const numPayments = years * 12;
+            
+            const futureValue = currentSavings * Math.pow(1 + monthlyRate, numPayments) + 
+                               monthlyContribution * (Math.pow(1 + monthlyRate, numPayments) - 1) / monthlyRate;
+            
+            const totalContributions = currentSavings + (monthlyContribution * numPayments);
+            
+            document.getElementById('ret-result').innerHTML = `
+                <div class="result-box">
+                    <h4>Results</h4>
+                    <p><strong>Retirement Savings:</strong> $${futureValue.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Total Contributions:</strong> $${totalContributions.toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Investment Growth:</strong> $${(futureValue - totalContributions).toLocaleString('en-US', {maximumFractionDigits: 0})}</p>
+                    <p><strong>Years to Retirement:</strong> ${years}</p>
+                </div>
+            `;
+        }
+
+        function downloadResource(resourceName) {
+            alert(`Downloading ${resourceName}...\n\nNote: In a production environment, this would download the actual file.`);
+            // In production, this would trigger an actual file download
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions | AI Cool Finance</title>
+    <meta name="description" content="Find answers to common personal finance questions. Learn about budgeting, investing, debt management, and more.">
+    <meta name="keywords" content="FAQ, personal finance questions, money FAQ, financial advice, budgeting help">
+    <meta name="author" content="AI Cool Finance Team">
+    <link rel="canonical" href="https://www.aicoolgames.cool/faq.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Frequently Asked Questions | AI Cool Finance">
+    <meta property="og:description" content="Find answers to common personal finance questions.">
+    <meta property="og:url" content="https://www.aicoolgames.cool/faq.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Frequently Asked Questions">
+    <meta name="twitter:description" content="Find answers to common personal finance questions.">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1091058137620121" crossorigin="anonymous"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-239D8TQJ2R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-239D8TQJ2R');
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        .faq-section {
+            padding: 4rem 0;
+        }
+        
+        .faq-categories {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+        
+        .faq-category-btn {
+            padding: 0.75rem 1.5rem;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+        
+        .faq-category-btn:hover,
+        .faq-category-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: var(--bg-light);
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s, padding 0.3s;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            line-height: 1.8;
+            color: var(--text-light);
+        }
+        
+        .faq-answer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+        
+        .still-have-questions {
+            background: var(--bg-light);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .still-have-questions h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .still-have-questions p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">AI Cool <span>Finance</span></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="faq.html" class="active">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <span>FAQ</span>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to the most common personal finance questions. Can't find what you're looking for? <a href="contact.html" style="color: white; text-decoration: underline;">Contact us</a>.</p>
+        </div>
+    </section>
+
+    <!-- Top Ad -->
+    <div class="ad-container">
+        <div class="container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1091058137620121" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="faq-categories">
+                <button class="faq-category-btn active" data-category="all">All Questions</button>
+                <button class="faq-category-btn" data-category="budgeting">Budgeting</button>
+                <button class="faq-category-btn" data-category="saving">Saving</button>
+                <button class="faq-category-btn" data-category="investing">Investing</button>
+                <button class="faq-category-btn" data-category="debt">Debt</button>
+                <button class="faq-category-btn" data-category="credit">Credit</button>
+            </div>
+
+            <!-- FAQ List -->
+            <div class="faq-list">
+                <!-- Budgeting Questions -->
+                <div class="faq-item" data-category="budgeting">
+                    <div class="faq-question">How do I start budgeting if I've never done it before?</div>
+                    <div class="faq-answer">
+                        <p>Starting a budget is simpler than you think. Begin by tracking your spending for one month to understand where your money goes. Then, categorize your expenses into needs (rent, groceries) and wants (entertainment, dining out). Set realistic spending limits for each category and review weekly. Use our <a href="resources.html">free budget template</a> to make it easier. Remember, the best budget is one you'll actually stick to, so start simple and adjust as you go.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="budgeting">
+                    <div class="faq-question">What's the 50/30/20 rule?</div>
+                    <div class="faq-answer">
+                        <p>The 50/30/20 rule is a simple budgeting framework: allocate 50% of your after-tax income to needs (housing, food, utilities), 30% to wants (entertainment, hobbies), and 20% to savings and debt repayment. It's a great starting point for beginners, but feel free to adjust the percentages based on your situation. If you have high debt, you might allocate more to debt repayment. If you're saving for a big goal, you might increase your savings percentage.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="budgeting">
+                    <div class="faq-question">How can I stick to my budget?</div>
+                    <div class="faq-answer">
+                        <p>Sticking to a budget requires both planning and mindset shifts. First, make your budget realistic—if it's too restrictive, you'll abandon it. Use the envelope system for variable expenses like groceries and entertainment. Automate your savings so money goes to savings before you can spend it. Review your budget weekly, not just monthly. And most importantly, build in some fun money so you don't feel deprived. Check out our <a href="blog/budgeting-101.html">Complete Budgeting Guide</a> for more detailed strategies.</p>
+                    </div>
+                </div>
+
+                <!-- Saving Questions -->
+                <div class="faq-item" data-category="saving">
+                    <div class="faq-question">How much should I have in my emergency fund?</div>
+                    <div class="faq-answer">
+                        <p>Most experts recommend 3-6 months of essential expenses in your emergency fund. If you have a stable job and no dependents, 3 months may be sufficient. If you have children, are self-employed, or work in an unstable industry, aim for 6-12 months. Start with a goal of $1,000, then build up gradually. Use our <a href="resources.html">Emergency Fund Calculator</a> to determine your specific needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="saving">
+                    <div class="faq-question">Where should I keep my emergency fund?</div>
+                    <div class="faq-answer">
+                        <p>Your emergency fund should be easily accessible but separate from your checking account to avoid temptation. The best place is a high-yield savings account (HYSA) at an online bank. These accounts offer higher interest rates (currently 4-5%) than traditional savings accounts while keeping your money liquid and FDIC-insured. Avoid investing your emergency fund in stocks or CDs, as you need immediate access without risk of loss.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="saving">
+                    <div class="faq-question">How can I save money when I'm living paycheck to paycheck?</div>
+                    <div class="faq-answer">
+                        <p>Start small—even $5 or $10 per paycheck adds up. Look for one expense to cut (subscriptions, dining out, etc.). Sell items you no longer need. Consider a side hustle for extra income. Most importantly, pay yourself first: automate a small transfer to savings on payday. As you pay off debt or get raises, increase your savings rate gradually. Read our guide on <a href="blog/cut-monthly-expenses.html">cutting monthly expenses</a> for practical tips.</p>
+                    </div>
+                </div>
+
+                <!-- Investing Questions -->
+                <div class="faq-item" data-category="investing">
+                    <div class="faq-question">When should I start investing?</div>
+                    <div class="faq-answer">
+                        <p>The best time to start investing is now—time is your greatest asset. Thanks to compound interest, starting early with small amounts beats starting later with larger amounts. Before investing, make sure you have: (1) a fully funded emergency fund, (2) high-interest debt paid off, and (3) any employer 401(k) match being captured. Even $50-$100 per month is a great start. Check out our <a href="blog/investing-101.html">Investing 101 Guide</a> for beginners.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="investing">
+                    <div class="faq-question">What's the difference between a 401(k) and an IRA?</div>
+                    <div class="faq-answer">
+                        <p>A 401(k) is an employer-sponsored retirement plan with higher contribution limits ($23,000 in 2024) and potential employer matching. An IRA (Individual Retirement Account) is opened by you with lower limits ($7,000 in 2024) but more investment options. Both offer tax advantages. Generally, contribute enough to get your full 401(k) match, then max out an IRA, then return to the 401(k). Learn more in our <a href="blog/401k-vs-ira.html">detailed comparison</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="investing">
+                    <div class="faq-question">Should I pay off debt or invest first?</div>
+                    <div class="faq-answer">
+                        <p>It depends on the interest rates. If your debt has an interest rate above 6-7%, prioritize paying it off before investing (except for 401(k) matches—that's free money). For lower-interest debt like mortgages or student loans, you can do both simultaneously. Build a small emergency fund first, capture any employer match, then aggressively pay off high-interest debt before investing more.</p>
+                    </div>
+                </div>
+
+                <!-- Debt Questions -->
+                <div class="faq-item" data-category="debt">
+                    <div class="faq-question">What's the best way to pay off debt?</div>
+                    <div class="faq-answer">
+                        <p>The two most popular methods are the Debt Snowball (pay smallest balances first for psychological wins) and Debt Avalanche (pay highest interest rates first to save money mathematically). Both work—choose the one that motivates you more. The key is to stop adding new debt, pay minimums on everything except your target debt, and put all extra money toward that target. Use our <a href="resources.html">Debt Payoff Calculator</a> to see which method works best for you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="debt">
+                    <div class="faq-question">Should I consolidate my debt?</div>
+                    <div class="faq-answer">
+                        <p>Debt consolidation can be helpful if you can get a lower interest rate and don't rack up new debt. Options include balance transfer credit cards (0% intro APR), personal loans, or home equity loans. However, consolidation doesn't solve the behavior that created the debt. Make sure you have a plan to avoid new debt and can afford the payments. Avoid debt settlement companies that charge high fees.</p>
+                    </div>
+                </div>
+
+                <!-- Credit Questions -->
+                <div class="faq-item" data-category="credit">
+                    <div class="faq-question">How can I improve my credit score quickly?</div>
+                    <div class="faq-answer">
+                        <p>The fastest ways to improve your credit score: (1) Pay down credit card balances to below 30% of your limit—ideally below 10%. (2) Become an authorized user on someone else's old, well-managed account. (3) Dispute any errors on your credit report. (4) Pay all bills on time going forward. (5) Don't close old accounts, as this reduces your credit history length. Read our complete guide on <a href="blog/improve-credit-score.html">improving your credit score</a>.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="credit">
+                    <div class="faq-question">What's a good credit score?</div>
+                    <div class="faq-answer">
+                        <p>Credit scores range from 300-850. Generally: 300-579 is Poor, 580-669 is Fair, 670-739 is Good, 740-799 is Very Good, and 800+ is Excellent. For the best loan rates, aim for 740 or higher. However, don't obsess over perfection—once you're above 760, you're typically getting the best rates available. Focus on consistent good habits rather than chasing a perfect score.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="credit">
+                    <div class="faq-question">How often should I check my credit report?</div>
+                    <div class="faq-answer">
+                        <p>You should check your credit report from all three bureaus (Equifax, Experian, TransUnion) at least once per year. You can get free reports at AnnualCreditReport.com. Consider checking one bureau every four months to monitor throughout the year. Also check before applying for major loans and if you suspect identity theft. Many credit cards now offer free credit score monitoring as a benefit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Middle Ad -->
+    <div class="ad-container">
+        <div class="container">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1091058137620121" data-ad-slot="2345678901" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+    </div>
+
+    <!-- Still Have Questions -->
+    <section class="still-have-questions">
+        <div class="container">
+            <h2>Still Have Questions?</h2>
+            <p>Can't find the answer you're looking for? Our team is here to help. Send us a message and we'll get back to you as soon as possible.</p>
+            <a href="contact.html" class="btn btn-large">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>AI Cool Finance</h3>
+                    <p>Your trusted source for personal finance advice. We provide free tools, resources, and guides to help you achieve financial freedom.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="blog.html?category=budgeting">Budgeting</a></li>
+                        <li><a href="blog.html?category=investing">Investing</a></li>
+                        <li><a href="blog.html?category=debt">Debt Management</a></li>
+                        <li><a href="blog.html?category=retirement">Retirement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-legal">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Cool Finance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FAQ JavaScript -->
+    <script>
+        // Toggle FAQ items
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all items
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+                
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Category filtering
+        document.querySelectorAll('.faq-category-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                document.querySelectorAll('.faq-category-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const category = btn.dataset.category;
+                
+                // Filter FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (category === 'all' || item.dataset.category === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
