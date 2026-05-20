@@ -2254,3 +2254,33 @@ nav a.active {
     border-radius: 8px;
     margin-bottom: 1rem;
 }
+
+.topic-hubs {
+    padding: 4rem 0;
+}
+
+.topic-hub {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.topic-hub h2 {
+    margin-bottom: 0.75rem;
+}
+
+.topic-hub p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.topic-hub ol {
+    margin-left: 1.25rem;
+}
+
+.topic-hub li {
+    margin-bottom: 0.5rem;
+}
